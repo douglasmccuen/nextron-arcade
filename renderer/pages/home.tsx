@@ -23,6 +23,11 @@ function Home() {
           <a className='btn-blue'>Go to next page</a>
         </Link>
       </div>
+      <div className='mt-1 w-full flex-wrap flex justify-center'>
+        <Link href='/mame'>
+          <a className='btn-blue'>Go to mame page</a>
+        </Link>
+      </div>
     </React.Fragment>
   );
 }

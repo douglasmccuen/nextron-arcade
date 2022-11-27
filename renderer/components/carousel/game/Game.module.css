@@ -1,0 +1,53 @@
+.Game {
+  border-radius: 1rem;
+  border: 2px solid white;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vw;
+  transform: scale(0.8);
+  transition: transform 400ms ease;
+}
+
+.Active {
+  border-color: yellow;
+  border-width: 4px;
+}
+.Active,
+.PreActive.isMoving {
+  transform: scale(1);
+}
+.PreActive,
+.PostActive,
+.PrePreActive.isMoving,
+.Active.isMoving {
+  transform: scale(0.9);
+}
+.PrePreActive,
+.PostPostActive,
+.PostActive.isMoving {
+  transform: scale(0.8);
+}
+
+.Image {
+  flex: 2;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Name {
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  flex: 0;
+}
+.Desc {
+  color: white;
+  background-color: rgba(50, 50, 50, 1);
+  text-overflow: ellipsis;
+  padding: 1rem;
+  flex: 1;
+}
