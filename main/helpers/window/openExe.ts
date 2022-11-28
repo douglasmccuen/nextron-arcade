@@ -8,7 +8,7 @@ const openExe = ({game, config}:EmulatorProps, cb:Callback):ChildProcess => {
   const cd = `cd ${romConfigPath}${game.name}`
   const cmd = `${cd} && ${cwd}${game.game}`
 
-  console.error("OPEN EXE", cmd)
+  // console.error("OPEN EXE", cmd)
   return exec(cmd, cb)
 }
 

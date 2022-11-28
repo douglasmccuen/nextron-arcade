@@ -11,7 +11,7 @@ const openRetroArch = ({game, config}:EmulatorProps, cb:Callback):ChildProcess =
   const rom = `${romConfigPath}${game.game}`
   const cmd = `${cd} && ${retroArchExec} -f -L ${core} ${rom}`
 
-  console.error("OPEN RA", cmd)
+  // console.error("OPEN RA", cmd)
   return exec(cmd, cb)
 }
 
