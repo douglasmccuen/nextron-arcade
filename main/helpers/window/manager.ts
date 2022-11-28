@@ -30,13 +30,8 @@ export default class WindowManager {
     this.mainWindow.setFullScreen(true)
     ipcMain.handle(OPEN_WINDOW, async (_: IpcMainInvokeEvent, props: EmulatorProps) => {
       const result = await openEmulatorWindow(this.mainWindow)(props)
-
-      // TODO if this app closes/exits it should close this mameProcess
-      // result.kill(2)
-      // ... but where to stash it?
-
       this.mainWindow.setFullScreen(false)
-      return result
+      return result.pid
     })
     ipcMain.handle(SYSTEM_SLEEP, handleSleep(this.mainWindow))
 

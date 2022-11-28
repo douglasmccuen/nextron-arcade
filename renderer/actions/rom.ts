@@ -40,12 +40,15 @@ export function openGame(game: string) {
     const { mameProcess, isOpen } = rom
     if (isOpen || mameProcess) return
 
-    const { pid } = await ipcRenderer.invoke(OPEN_WINDOW, props)
+    const pid = await ipcRenderer.invoke(OPEN_WINDOW, props).catch((e) => {
+      console.error('No PID from open window', e.message)
+      return false
+    })
     if (pid) {
 
       ipcRenderer.on(processExitChannel(pid), (_, code) => {
         dispatch(closeRom())
-        console.log(`Mame exited with code: ${code}`);
+        console.log(`Emulator exited with code: ${code}`);
       })
 
       ipcRenderer.on(errorChannel, (_, message) => {
