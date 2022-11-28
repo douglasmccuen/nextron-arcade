@@ -1,9 +1,22 @@
 {
-  "private": true,
-  "name": "my-nextron-app",
-  "description": "My application description",
+  "name": "mccuen-arcade-2",
+  "productName": "McCuenArcade2",
   "version": "1.0.0",
-  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "description": "The Arcade controller for TeamMcCuen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasmccuen/nextron-arcade.git"
+  },
+  "author": {
+    "name": "Kemosabe7",
+    "email": "doug@kemosabe7.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/douglasmccuen/nextron-arcade/issues"
+  },
+  "homepage": "https://github.com/douglasmccuen/nextron-arcade",
   "main": "app/background.js",
   "scripts": {
     "dev": "nextron",
