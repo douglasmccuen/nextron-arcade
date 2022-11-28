@@ -4,8 +4,8 @@ const cfg = {
   retroArchExec: 'MacOS/RetroArch',
   retroArchCorePath: 'Resources/cores/',
   retroArchCoreExt: 'dylib',
-  mamePath: 'mame',
-  mameExec: './mame64',
+  mamePath: '/Users/douglasmccuen/mame',
+  mameExec: './mame',
   cwd: './'
 }
 
