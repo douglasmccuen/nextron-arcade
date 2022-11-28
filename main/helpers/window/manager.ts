@@ -6,7 +6,7 @@ import {
 import sleep from 'suspend-pc'
 
 import openEmulatorWindow, { openMameForConfig, openRetroArchForConfig } from './openEmulatorWindow'
-import { OPEN_WINDOW, SYSTEM_SLEEP, sleepErrorChannel } from './constants'
+import { OPEN_WINDOW, SYSTEM_SLEEP, sleepErrorChannel } from './common/constants'
 import { EmulatorProps } from './types'
 
 const handleSleep = (win: BrowserWindow) => async () => {

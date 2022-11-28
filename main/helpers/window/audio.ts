@@ -8,7 +8,7 @@ import loudness from 'loudness'
 import {
   GET_VOLUME_MUTE_WINDOW, GET_VOLUME_MUTE_OS, VOLUME_MUTE_WINDOW,
   VOLUME_MUTE_OS, GET_VOLUME_LEVEL, SET_VOLUME_LEVEL
-} from './constants'
+} from './common/constants'
 
 const toggleWindowMute = (win: BrowserWindow) => async () => {
   const { webContents } = win

@@ -1,7 +1,7 @@
 /* eslint no-console: 0 */
 import { ipcRenderer } from 'electron'
 import { Dispatch, GetState } from '../reducers/types'
-import { errorChannel, processExitChannel, OPEN_WINDOW } from '../constants/constants'
+import { errorChannel, processExitChannel, OPEN_WINDOW } from '@common/constants'
 import { EmulatorProps } from '../../main/helpers/window/types'
 
 export const OPEN_ROM = 'OPEN_ROM';

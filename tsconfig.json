@@ -17,7 +17,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@common/*": ["main/helpers/window/common/*"],
+    }
   },
   "exclude": [
     "node_modules",

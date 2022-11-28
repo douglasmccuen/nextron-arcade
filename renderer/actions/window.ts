@@ -5,7 +5,7 @@ import {
   audioErrorChannel, GET_VOLUME_MUTE_WINDOW, VOLUME_MUTE_WINDOW,
   GET_VOLUME_MUTE_OS, VOLUME_MUTE_OS, GET_VOLUME_LEVEL, SET_VOLUME_LEVEL,
   SYSTEM_SLEEP
-} from '../constants/constants'
+} from '@common/constants'
 
 export const TOGGLE_MUTE_WINDOW = 'TOGGLE_MUTE_WINDOW'
 export const GET_MUTE_WINDOW = 'GET_MUTE_WINDOW'

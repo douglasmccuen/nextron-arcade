@@ -3,7 +3,7 @@ import { BrowserWindow } from 'electron'
 import openMame, { openMameProcess } from './openMame'
 import openRetroArch, { openRetroArchProcess } from './openRetroArch'
 import openExe from './openExe'
-import { processExitChannel } from './constants'
+import { processExitChannel } from './common/constants'
 import callback from './processCallback'
 import { EmulatorProps, Callback } from './types'
 
