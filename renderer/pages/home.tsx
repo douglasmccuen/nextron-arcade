@@ -1,35 +1,34 @@
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
+import { bindActionCreators, Dispatch } from '@reduxjs/toolkit';
+import { connect } from 'react-redux'
+import Mame from '../components/Mame';
+import { openGame, closeGame } from '../actions/rom';
+import refreshConfig from '../actions/config';
+import {
+  isWindowMuted as getIsWindowMuted, muteWindow, isOSMuted as getIsOSMuted, muteOS, setOSVolumeLevel,
+  getOSVolumeLevel, gotToSleepNow as onSleep
+} from '../actions/window'
+import { AppState } from '../reducers/types';
 
-function Home() {
-  return (
-    <React.Fragment>
-      <Head>
-        <title>Home - Nextron (with-typescript-tailwindcss)</title>
-      </Head>
-      <div className='grid grid-col-1 text-2xl w-full text-center'>
-        <img className='ml-auto mr-auto' src='/images/logo.png' />
-        <span>⚡ Electron ⚡</span>
-        <span>+</span>
-        <span>Next.js</span>
-        <span>+</span>
-        <span>tailwindcss</span>
-        <span>=</span>
-        <span>💕 </span>
-      </div>
-      <div className='mt-1 w-full flex-wrap flex justify-center'>
-        <Link href='/next'>
-          <a className='btn-blue'>Go to next page</a>
-        </Link>
-      </div>
-      <div className='mt-1 w-full flex-wrap flex justify-center'>
-        <Link href='/mame'>
-          <a className='btn-blue'>Go to mame page</a>
-        </Link>
-      </div>
-    </React.Fragment>
-  );
+function mapStateToProps(state: AppState) {
+  const { isOpen } = state.rom
+  const { roms=[] } = state.config
+  const { isOSMuted, isWindowMuted, volumeLevel } = state.win
+
+  // sort the games by name
+  const games = [...roms]
+  games.sort((a, b) => {
+    return a.name.localeCompare(b.name)
+  })
+
+  return { isOpen, games, isOSMuted, isWindowMuted, volumeLevel }
 }
 
-export default Home;
+function mapDispatchToProps(dispatch: Dispatch) {
+  return bindActionCreators({
+    openGame, closeGame, refreshConfig, muteWindow,
+    getIsWindowMuted, getIsOSMuted,
+    muteOS, setOSVolumeLevel, getOSVolumeLevel, onSleep
+  }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Mame);
