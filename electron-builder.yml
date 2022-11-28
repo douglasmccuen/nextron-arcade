@@ -1,6 +1,6 @@
-appId: com.example.nextron
-productName: My Nextron App
-copyright: Copyright © 2018 Yoshihide Shiono
+appId: com.kemosabe7.arcade2
+productName: McCuen Arcade 2
+copyright: Copyright © 2022 Kemosabe7
 directories:
   output: dist
   buildResources: resources
@@ -9,4 +9,11 @@ files:
     filter:
       - package.json
       - app
-publish: null
+publish: 
+  provider: s3
+  bucket: team-mccuen
+  acl: public-read
+  region: us-west-2
+  channel: latest
+  path: electron
+    
