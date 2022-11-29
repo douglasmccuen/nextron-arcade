@@ -66,7 +66,7 @@ export const buildWinTemplate = (windowManager, mainWindow, shell):MenuItemConst
                   accelerator: 'Ctrl+Command+T',
                   click: () => {
                     shell.openExternal(
-                      'https://github.com/douglasmccuen/team-mccuen-arcade/projects/1'
+                      'https://github.com/users/douglasmccuen/projects/1/views/4'
                     )
                   }
                 },
@@ -75,7 +75,7 @@ export const buildWinTemplate = (windowManager, mainWindow, shell):MenuItemConst
                   accelerator: 'Command+T',
                   click: () => {
                     shell.openExternal(
-                      'https://github.com/douglasmccuen/team-mccuen-arcade/issues'
+                      'https://github.com/douglasmccuen/nexttron-arcade/issues'
                     )
                   }
                 },
@@ -108,27 +108,27 @@ export const buildWinTemplate = (windowManager, mainWindow, shell):MenuItemConst
         label: 'Help',
         submenu: [
           {
-            label: 'Learn More',
+            label: 'Electron',
             click() {
               shell.openExternal('https://electronjs.org');
             }
           },
           {
-            label: 'Documentation',
+            label: 'Nextron',
             click() {
               shell.openExternal(
-                'https://github.com/electron/electron/tree/master/docs#readme'
+                'https://github.com/saltyshiomix/nextron'
               );
             }
           },
           {
-            label: 'Community Discussions',
+            label: 'Electron Discussions',
             click() {
               shell.openExternal('https://www.electronjs.org/community');
             }
           },
           {
-            label: 'Search Issues',
+            label: 'Electron Issues',
             click() {
               shell.openExternal('https://github.com/electron/electron/issues');
             }

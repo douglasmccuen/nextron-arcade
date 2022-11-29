@@ -73,7 +73,7 @@ export const buildDarwinTemplate = (windowManager, mainWindow, shell):MenuItemCo
           accelerator: 'Ctrl+Command+T',
           click: () => {
             shell.openExternal(
-              'https://github.com/douglasmccuen/nextron-arcade/projects/1'
+              'https://github.com/users/douglasmccuen/projects/1/views/4'
             )
           }
         },
