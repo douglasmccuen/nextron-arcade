@@ -12,7 +12,31 @@ No support for Next13 yet, but [it looks like](https://github.com/saltyshiomix/n
 
 ### Arcade App Config
 
-Need to clean this up...
+You can override the default config for the app and the games in `ini` files in the following locations:
+* <home-dir>/Public/games/.teamMcCuen
+* <home-dir>/Public/games/.roms
+
+Here is a sample override for `.teamMcCuen`.
+```ini
+romConfigPath=/Users/douglasmccuen/Public/games/
+retroArchPath=/Users/douglasmccuen/retroArch
+retroArchExec=MacOS/RetroArch
+retroArchCorePath=Resources/cores/
+retroArchCoreExt=.dylib
+mamePath=/Users/douglasmccuen/mame
+mameExec=./mame
+cwd=./
+
+[keyMap]
+back[]=d
+back[]=ArrowLeft
+forward[]=g
+forward[]=ArrowRight
+select[]=5
+select[]=6
+spin[]=e
+spin[]=z
+```
 
 ## Assets/Images
 
@@ -29,6 +53,8 @@ I can simply put the image assets for the UI in the public directory, but that m
 No automation or basic checks yet, but there is a build and publish step.
 
 ### Secrets
+
+You can log into AWS to get these values, or generate new ones.
 
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY

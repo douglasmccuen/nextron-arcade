@@ -1,7 +1,9 @@
 import { app } from 'electron';
+import AppUpdater from './updater'
 import serve from 'electron-serve';
 import { createWindow } from './helpers';
 import { WindowManager, AudioManager } from './helpers/window'
+import MenuBuilder from './menu'
 
 const isProd: boolean = process.env.NODE_ENV === 'production';
 
@@ -26,8 +28,12 @@ if (isProd) {
   const audioManager = new AudioManager(mainWindow)
   audioManager.activate()
 
+  const menuBuilder = new MenuBuilder(mainWindow, windowManager);
+  menuBuilder.buildMenu();
+
   if (isProd) {
     await mainWindow.loadURL('app://./home.html');
+    new AppUpdater();
   } else {
     const port = process.argv[2];
     await mainWindow.loadURL(`http://localhost:${port}/home`);

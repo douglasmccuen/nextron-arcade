@@ -1,5 +1,14 @@
 import type { Dispatch as ReduxDispatch, Store as ReduxStore } from '@reduxjs/toolkit'
 
+export type KeyMap = {
+  back: string[]
+  forward: string[]
+  select: string[]
+  spin: string[]
+  // sleep: string[]
+  // mute: string[]
+}
+
 export type GameSate = {
   isOpen: boolean
   game: string
@@ -19,7 +28,7 @@ export type RomConfig = {
 
 export type ConfigState = {
   roms?: [RomConfig]
-  romsByGame: {[key:string]: RomConfig}
+  romsByGame?: {[key:string]: RomConfig}
   romConfigPath: string
   mamePath: string
   mameExec: string
@@ -28,6 +37,7 @@ export type ConfigState = {
   retroArchCorePath: string
   retroArchCoreExt: string
   cwd: string
+  keyMap: KeyMap
 }
 
 export type WindowState = {

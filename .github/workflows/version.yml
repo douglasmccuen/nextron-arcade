@@ -1,0 +1,66 @@
+name: Node.js - Bump version on demand
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: "Release bump: major, minor or micro"
+        required: true
+        default: "micro"
+      release:
+        description: "Release type: stable, rc, alpha, or beta"
+        required: true
+        default: "stable"
+
+jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Bump version
+        id: version
+        uses: vemel/nextversion@main
+        with:
+          path: ./package.json
+          type: semver
+          result: ${{ github.event.inputs.bump }}
+          release: ${{ github.event.inputs.release }}
+          update: |
+            ./package.json
+            ./src/constants.js
+            ./README.md
+      - name: Add new release to CHANGELOG.md
+        id: changelog
+        uses: vemel/nextchange@main
+        with:
+          release: ${{ steps.version.outputs.result }}
+          get: Unreleased
+      - name: Remove Unreleased notes from CHANGELOG.md
+        id: changelog
+        uses: vemel/nextchange@main
+        with:
+          release: Unreleased
+          clear: true
+      - name: Commit changes
+        run: |
+          VERSION=${{ toJSON(steps.version.outputs.result) }}
+          BRANCH="release/${VERSION}"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git checkout -b $BRANCH
+          git commit -am "Bump version to $VERSION"
+          git push --set-upstream origin $BRANCH
+      - name: Create Pull Request
+        uses: actions/github-script@v3
+        if: "steps.release.outputs.result"
+        with:
+          script: |
+            const response = await github.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: 'release/${{ steps.version.outputs.result }}',
+              base: main,
+              title: 'Release ${{ steps.version.outputs.result }}',
+              body: ${{ toJSON(steps.changelog.outputs.result) }}
+            });

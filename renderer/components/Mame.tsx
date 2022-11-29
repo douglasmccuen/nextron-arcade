@@ -4,10 +4,11 @@
 import React, { RefObject } from 'react'
 import Carousel from './carousel'
 import Banner from './banner'
-import { RomConfig } from '../reducers/types'
+import { KeyMap, RomConfig } from '../reducers/types'
 
 type Props = {
   games: RomConfig[]
+  keyMap: KeyMap
   openGame: (g:string) => void
   closeGame: () => void
   refreshConfig: () => void
@@ -62,7 +63,7 @@ class Mame extends React.Component<Props> implements MameType {
   render() {
     const {
       openGame, isOpen, games, isOSMuted, muteOS, setOSVolumeLevel, onSleep,
-      volumeLevel
+      volumeLevel, keyMap
     } = this.props
     const volumeInc = 5
     return (games.length>0) ? (
@@ -79,6 +80,7 @@ class Mame extends React.Component<Props> implements MameType {
           openGame={openGame}
           paused={isOpen}
           games={games}
+          keyMap={keyMap}
           ref={this.carousel} />
       </>
     ) : <div ref={this.carousel}>loading...</div>
