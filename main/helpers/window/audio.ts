@@ -63,7 +63,6 @@ export default class AudioManager {
     ipcMain.handle(SET_VOLUME_LEVEL, setOSVolume)
 
     // add keyboard shortcuts
-    // Player 1 side button 2 AND Player 2 Joystick down
     // globalShortcut.register('3+F', toggleOSMute)
   }
 

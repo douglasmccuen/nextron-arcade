@@ -1,10 +1,11 @@
 /* eslint no-restricted-globals: off */
 /* eslint no-console: off */
 import { useReducer, useEffect } from 'react'
-import { elastic, smooth, smoothSpin, initialState, keys } from './constants'
+import { elastic, smooth, smoothSpin, initialState } from './constants'
 import carouselReducer from './reducer'
 import {spinningEffect, nextEffect, doneEffect } from './effects'
 import prespin from './prespin'
+import { KeyMap } from '../../../renderer/reducers/types'
 
 type returnTypes = [
   number,
@@ -20,6 +21,7 @@ const useCarousel = (
   interval: number,
   onOpen: (n: number) => void,
   paused: boolean,
+  keys: KeyMap
 ): returnTypes => {
 
   const [state, dispatch] = useReducer(carouselReducer, initialState);

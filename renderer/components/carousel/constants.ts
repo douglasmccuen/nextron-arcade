@@ -13,9 +13,3 @@ export const initialState: CarouselState = {
   spinCount: 0,
   transitionTime
 }
-export const keys = {
-  back: ['d', 'ArrowLeft'],
-  forward: ['g', 'ArrowRight'],
-  select: ['5','6'],
-  spin: ['e','z']
-}

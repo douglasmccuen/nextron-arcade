@@ -6,24 +6,25 @@ import useCarousel from './useCarousel'
 import styles from './Carousel.module.css'
 import Game from './game'
 import Preview from './preview'
-import { RomConfig } from '../../reducers/types'
+import { KeyMap, RomConfig } from '../../reducers/types'
 
 type Props = {
   games: RomConfig[]
   openGame: (game: string) => void
   paused: boolean
+  keyMap: KeyMap
   ref: object
 }
 
 const Carousel = React.forwardRef((props: Props, ref: React.Ref<HTMLDivElement>) => {
-  const { openGame, paused, games } = props
+  const { openGame, paused, games, keyMap } = props
   const { length } = games
   const onOpen = (idx:number) => {
     const rom = games[idx]
     openGame(rom.game)
   }
   const [active, handlers, style, isMoving, isSpinning, jumpTo] =
-    useCarousel(length, 5000, onOpen, paused)
+    useCarousel(length, 5000, onOpen, paused, keyMap)
 
   const cn = [styles.Carousel]
   if (isSpinning) cn.push(styles.Spinning)
