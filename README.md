@@ -54,5 +54,7 @@ No automation or basic checks yet, but there is a build and publish step.
 
 ### Secrets
 
+You can log into AWS to get these values, or generate new ones.
+
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
