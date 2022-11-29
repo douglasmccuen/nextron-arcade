@@ -11,6 +11,12 @@ const defaultState: ConfigState = {
   retroArchCorePath: '',
   retroArchCoreExt: '',
   cwd: '',
+  keyMap: {
+    back: [],
+    forward: [],
+    select: [],
+    spin: []
+  },
   romsByGame: {}
 }
 
