@@ -1,38 +1,34 @@
-<p align="center"><img src="https://i.imgur.com/a9QWW0v.png"></p>
+# Team McCuen Arcade 2
 
-## Usage
+Much happier with the _Nextron_ updates which allow me to use Nextjs with Electron.  Config is much easier and there are fewer dependencies to mess with.
 
-### Create an App
+## Nextron
+No support for Next13 yet, but [it looks like](https://github.com/saltyshiomix/nextron) they are fairly up to data.
 
-```
-# with npx
-$ npx create-nextron-app my-app --example with-typescript-tailwindcss
+- A list of app [templates](https://github.com/saltyshiomix/nextron/tree/main/examples).
+- A good [overview](https://blog.logrocket.com/building-app-next-js-electron/#building-a-demo-app).
 
-# with yarn
-$ yarn create nextron-app my-app --example with-typescript-tailwindcss
+## Configuration
 
-# with pnpx
-$ pnpx create-nextron-app my-app --example with-typescript-tailwindcss
-```
+### Arcade App Config
 
-### Install Dependencies
+Need to clean this up...
 
-```
-$ cd my-app
+## Assets/Images
 
-# using yarn or npm
-$ yarn (or `npm install`)
+I can simply put the image assets for the UI in the public directory, but that might bloat the size of the app.  Ideally, the assests come from config as fully qualified URLs, and the images are pushed to AWS or other host.  This decouples the ROM config from the application, so new games can be added to the arcade without publishing a new version of the arcade.
 
-# using pnpm
-$ pnpm install --shamefully-hoist
-```
 
-### Use it
+### Electron Builder
 
-```
-# development mode
-$ yarn dev (or `npm run dev` or `pnpm run dev`)
+- [Instructions](https://www.electron.build/configuration/configuration.html) for `electron-builder.yml`.
+- [Publish](https://www.electron.build/configuration/publish) instructions.
 
-# production build
-$ yarn build (or `npm run build` or `pnpm run build`)
-```
+## Workflows
+
+No automation or basic checks yet, but there is a build and publish step.
+
+### Secrets
+
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY

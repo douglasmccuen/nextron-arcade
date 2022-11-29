@@ -1,6 +1,7 @@
 import { app } from 'electron';
 import serve from 'electron-serve';
 import { createWindow } from './helpers';
+import { WindowManager, AudioManager } from './helpers/window'
 
 const isProd: boolean = process.env.NODE_ENV === 'production';
 
@@ -17,6 +18,13 @@ if (isProd) {
     width: 1000,
     height: 600,
   });
+
+  // handle the creation of windows for emulators
+  const windowManager = new WindowManager(mainWindow)
+  windowManager.activate()
+
+  const audioManager = new AudioManager(mainWindow)
+  audioManager.activate()
 
   if (isProd) {
     await mainWindow.loadURL('app://./home.html');

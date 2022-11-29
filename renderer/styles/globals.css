@@ -13,3 +13,50 @@
     @apply text-white font-bold px-4 py-2 rounded bg-blue-600 hover:bg-blue-500;
   }
 }
+
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+body {
+  position: relative;
+  color: white;
+  height: 100vh;
+  background-color: pink;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 105, 180, 0.5) 10%,
+    rgba(255, 20, 147, 1)
+  );
+  font-family: Arial, Helvetica, Helvetica Neue, serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0å;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  color: #fff;
+}
+
+p {
+  font-size: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.Preview {
+  margin-right: 1px;
+  border: 8px solid rgba(0, 0, 0, 0);
+  border-left: 0;
+  border-right: 0;
+  display: inline-block;
+  height: 10vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Active {
+  border-color: yellow;
+  background-color: gray;
+}
+.Preview img {
+  width: 300%;
+  position: absolute;
+  top: -10px;
+  left: -100%;
+}

@@ -1,0 +1,50 @@
+.Carousel {
+  padding: 3vh 0;
+}
+.Carousel:focus {
+  border: 0;
+  outline: none;
+}
+.Indicators {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 -10px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  padding-top: 2vh;
+}
+.Indicators li {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.Content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.Item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.Active {
+  background-color: red;
+}
+
+/* The animation code */
+.Spinning {
+  outline: none;
+}
+@keyframes spin {
+  0% {
+    transform: translateX(-80%);
+  }
+}
+.Spinning .Content {
+  animation-name: spin;
+  animation-timing-function: linear;
+}
