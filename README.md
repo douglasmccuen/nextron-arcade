@@ -58,3 +58,33 @@ You can log into AWS to get these values, or generate new ones.
 
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
+
+## XArcade TankStick
+
+The buttons on this thing are hard to map, but they trigger mouse and key codes.  When the Emulator is running, the keys have to be mapped in Mame or RetroArch before they will work.  When the Arcade app is running, the keys can be added to the .teamMcCuen config.
+
+| Button | Key     | KeyCode | Mouse Button | Location              |
+|--------|---------|---------|--------------|-----------------------|
+|Player 1| 1       | 49      |              | white button, center  |
+|Player 2| 2       | 50      |              | white button, center  |
+|Exit    |         |         |              | red button (broken?)  |
+|Select 1|         |         | 0            | left side, first      |
+|Select 2| 3       | 51      |              | left side, second     |
+|Select 3|         |         | 2            | right side, first     |
+|Select 4| 4       | 52      |              | right side, second    |
+|P1 L1   | Control | 17      |              | player 1, button 1    |
+|P1 R1   | Alt     | 18      |              | player 1, button 2    |
+|P1 X    | <SPACE> | 32      |              | player 1, button 3    |
+|P1 Y    | Shift   | 16      |              | player 1, button 4    |
+|P1 B    | z       | 90      |              | player 1, button 5    |
+|P1 A    | x       | 88      |              | player 1, button 6    |
+|P1 L2   | c       | 67      |              | player 1, button 7    |
+|P1 R2   | 5       | 53      |              | player 1, button 8    |
+|P1 L1   | a       | 65      |              | player 2, button 1    |
+|P1 R1   | s       | 83      |              | player 2, button 2    |
+|P1 X    | q       | 81      |              | player 2, button 3    |
+|P1 Y    | w       | 87      |              | player 2, button 4    |
+|P1 B    | e       | 69      |              | player 2, button 5    |
+|P1 A    | [       | 219     |              | player 2, button 6    |
+|P1 L2   | ]       | 221     |              | player 2, button 7    |
+|P1 R2   | 6       | 54      |              | player 2, button 8    |
