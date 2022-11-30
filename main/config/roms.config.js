@@ -13,8 +13,8 @@ const roms = {
       game: 'boogwing',
       name: 'Boogie Wings',
       emulator: 'mame',
-      preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/zaxxon.png',
-      image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/zaxxon.png',
+      image: '/images/better/boogiewings.png',
+      preview: '/images/boogie-preview.png',
       rating: 5,
       description: 'Ragtime meets Steampunk?  Who knew this was a thing?'
     },
@@ -59,8 +59,8 @@ const roms = {
       name: 'Daze Before Christmas',
       emulator: 'retro',
       core: 'snes9x_libretro',
-      preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/zaxxon.png',
-      image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/zaxxon.png',
+      image: '/images/better/daze_b4_xmas.jpeg',
+      preview: '/images/daze-preview.jpeg',
       rating: 5,
       description: 'Ho, Ho, Ho.  Tis the season of playing games, and this is the best XMas game I found.'
     },
