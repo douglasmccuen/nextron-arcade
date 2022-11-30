@@ -7,16 +7,16 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/alpineracer.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/22298-ingame-Alpine-Racer.jpg',
       rating: 5,
-      description: 'This game is pretty cool, but it needs a computer faster than our little mac mini to run the super advanced animation.'
+      description: 'This game is pretty cool, but it needs a computer faster than our little PC to run the super advanced animation.'
     },
     {
       game: 'boogwing',
       name: 'Boogie Wings',
       emulator: 'mame',
-      preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/zaxxon.png',
-      image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/zaxxon.png',
+      image: '/images/better/boogiewings.png',
+      preview: '/images/boogie-preview.png',
       rating: 5,
-      description: 'Ragtime meets Steampunk?  Who knew this was a thing?'
+      description: 'Ragtime meets Steampunk?  Who knew this was a thing?  Your goal is to find the Santa level.'
     },
     {
       game: 'btimem',
@@ -34,7 +34,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/cninja.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/cninja.png',
       rating: 5,
-      description: ''
+      description: 'The objective of the game is to rescue the "Cave Babes" who were kidnapped by a rival tribe of cavemen.'
     },
     {
       game: 'centiped',
@@ -43,7 +43,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/centepede.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/games/centipede.jpg',
       rating: 5,
-      description: ''
+      description: 'One of the most commercially successful games from the golden age of arcade video games.'
     },
     {
       game: 'crusnusa',
@@ -52,15 +52,15 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/cruisinusa.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/15633-ingame-Cruisn-USA.jpg',
       rating: 5,
-      description: ''
+      description: 'Way, way back when the internet was delivered by telephone, we had to use a lot of imagination.'
     },
     {
       game: 'xmas_daze.sfc',
       name: 'Daze Before Christmas',
       emulator: 'retro',
       core: 'snes9x_libretro',
-      preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/zaxxon.png',
-      image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/zaxxon.png',
+      image: '/images/better/daze_b4_xmas.jpeg',
+      preview: '/images/daze-preview.jpeg',
       rating: 5,
       description: 'Ho, Ho, Ho.  Tis the season of playing games, and this is the best XMas game I found.'
     },
@@ -80,7 +80,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/digdug.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/9512-ingame-Dig-Dug.jpg',
       rating: 5,
-      description: ''
+      description: 'The player controls protagonist Dig Dug (Taizo Hori) to eliminate each screen\'s enemies.'
     },
     {
       game: 'dkong',
@@ -108,7 +108,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/excitbkj.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/excitbkj.png',
       rating: 5,
-      description: ''
+      description: 'I still love the way they walk to get their bikes after a crash.  It must have hurt.'
     },
     {
       game: 'frogger',
@@ -117,7 +117,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/frogger.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/frogger.png',
       rating: 5,
-      description: ''
+      description: 'Will frogger find love?  Don\'t let him down.'
     },
     {
       game: 'galaga',
@@ -126,7 +126,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/galaga.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/games/galaga.jpg',
       rating: 5,
-      description: ''
+      description: 'All hail Galaga.  There is no Galaxian.'
     },
     {
       game: 'galaxian',
@@ -135,7 +135,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/galaxian.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/games/galaxian.png',
       rating: 4,
-      description: ''
+      description: 'There is no Galaga.  Only Galaxian.  (see what I did there?)'
     },
     {
       game: 'gauntlet.zip',
@@ -145,7 +145,7 @@ const roms = {
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/gauntletpreview.jpg',
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/gauntlet.jpg',
       rating: 5,
-      description: ''
+      description: 'Warrior needs food, badly... I still say this at lunchtime.'
     },
     {
       game: 'gt2k.zip',
@@ -155,7 +155,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/goldentee2kpreview.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/goldentee2k.png',
       rating: 5,
-      description: ''
+      description: 'This golf game is really good.  Much better than the real thing.'
     },
     {
       game: 'indytemp',
@@ -164,7 +164,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/indianjones.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/9812-title-Indiana-Jones-and-the-Temple-of-Doom.jpg',
       rating: 5,
-      description: ''
+      description: 'Cashing in.  They want your movie money, and all you\'re quarters.'
     },
     {
       game: 'joust',
@@ -173,7 +173,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/joust.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/games/joust.png',
       rating: 5,
-      description: ''
+      description: 'The developers of this game drive conversion vans with crazy paint jobs.'
     },
     {
       game: 'kungfum',
@@ -182,16 +182,16 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/kungfumaster.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/9894-ingame-Kung-Fu-Master.jpg',
       rating: 5,
-      description: ''
+      description: 'One of the many post-swim-practice video games at the YMCA.'
     },
     {
       game: 'Maelstrom.exe -fullscreen',
       name: 'Maelstrom',
       emulator: 'none',
-      preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/marble.png',
-      image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/marble.png',
+      image: '/images/better/maelstrom.jpeg',
+      preview: '/images/maelstrom-preview.jpeg',
       rating: 5,
-      description: 'Like Asteroids, but spicier.'
+      description: 'And here we have my Senior year in college.  Like Asteroids, but spicier.  The game, not my senior year.'
     },
     {
       game: 'marble',
@@ -200,7 +200,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/marble.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/marble.png',
       rating: 5,
-      description: ''
+      description: 'Harder to play than I remember.  I may need a cheat code.'
     },
     {
       game: 'mpatrol',
@@ -209,7 +209,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/mpatrol.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/mpatrol.png',
       rating: 5,
-      description: ''
+      description: 'Who is planting mines on the moon?  Nazis.'
     },
     {
       game: 'mwalk',
@@ -218,7 +218,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/mwalk.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/games/moonwalker.png',
       rating: 5,
-      description: 'Finding an image for this game that wasn\'t an animated gif was hard.  There is just too much awesome to described here.'
+      description: 'Finding an image for this game that wasn\'t an animated gif was hard.  There is just too much awesome to describe here.'
     },
     {
       game: 'mspacman',
@@ -227,7 +227,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/mspacman.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/games/mspacman.jpg',
       rating: 5,
-      description: ''
+      description: 'And yet, she persisted.'
     },
     {
       game: 'pacman',
@@ -236,7 +236,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/pacman.gif',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/games/pacman.png',
       rating: 5,
-      description: ''
+      description: 'I find myself rooting for the ghosts.'
     },
     {
       game: 'paperboyr2',
@@ -245,7 +245,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/paperboy.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/paperboy.png',
       rating: 5,
-      description: ''
+      description: 'This game didn\'t have a joystick.  It had handlebars.  A literal game-changer.'
     },
     {
       game: 'Prince\\PRINCE.exe',
@@ -255,7 +255,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/princeofpersia.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/princeofpersia.png',
       rating: 5,
-      description: ''
+      description: 'This was my Freshman year in college.  I\'d come back from class and find people in my room playing it my computer.  Honest.  I went to class.'
     },
     {
       game: 'rampage',
@@ -264,7 +264,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/rampage.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/rampage.png',
       rating: 5,
-      description: ''
+      description: 'Did the Rock make a movie about this game?'
     },
     {
       game: 'shinobi',
@@ -273,7 +273,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/shinobi.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/games/shinobi.png',
       rating: 5,
-      description: ''
+      description: 'The player controls ninja Joe Musashi, to stop the Zeed terrorist organization from kidnapping students of his clan.'
     },
     {
       game: 'spidman',
@@ -282,7 +282,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/spiderman.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/10993-menu-Spider-Man-the-Videogame.jpg',
       rating: 5,
-      description: ''
+      description: 'For those of you unfamiliar with comic books, the "Spider Man" is a super hero who slings webs.'
     },
     {
       game: 'splatter',
@@ -291,7 +291,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/splatterhouse.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/10630-ingame-Splatter-House.jpg',
       rating: 5,
-      description: ''
+      description: 'You must be this tall to play this game... Jamin, ask your dad if it is ok.'
     },
     {
       game: 'spyhunt',
@@ -300,7 +300,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/spyhunter.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/spyhunt.png',
       rating: 5,
-      description: ''
+      description: 'Dante\'s Pizzaria in New Cumberland, PA.  Pizza, Coke, and this game!!!'
     },
     {
       game: 'sf2',
@@ -309,7 +309,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/streetfighter2.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/games/sf2.jpg',
       rating: 5,
-      description: ''
+      description: 'I understand the kids like this game.'
     },
     {
       game: 'ssridersubc',
@@ -318,7 +318,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/sunsetriders.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/10674-ingame-Sunset-Riders.jpg',
       rating: 5,
-      description: ''
+      description: 'Four bounty hunters named Steve, Billy, Bob, and Cormano are out to claim rewards for the most wanted outlaws in the West.'
     },
     {
       game: 'supermariobros.nes',
@@ -358,7 +358,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/superpunchout.gif',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/SuperPunchOut.jpg',
       rating: 5,
-      description: ''
+      description: 'Sorry, this is not the Mike Tyson version, but you might have fun anyway.'
     },
     {
       game: 'tmnt',
@@ -376,7 +376,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/tetris.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/games/tetris.png',
       rating: 1,
-      description: ''
+      description: 'Hello, Sophmore year in college.'
     },
     {
       game: 'simpsons2p2',
@@ -394,7 +394,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/trckfld.gif',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/trackfld.png',
       rating: 5,
-      description: ''
+      description: 'Swim Camp at Shippensburg University.  We beat the snot out of those buttons.'
     },
     {
       game: 'zombies.smc',
@@ -404,7 +404,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/Zombiepreview.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/ZombieAteMy02.jpg',
       rating: 5,
-      description: ''
+      description: 'LucasArts developed this game.  Seems like a slight diversion for the brand.'
     },
     {
       game: 'zaxxon',
@@ -413,7 +413,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/zaxxon.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/zaxxon.png',
       rating: 5,
-      description: ''
+      description: 'We had this game on a 6 inch floppy disk, and the internet was a decade away.'
     },
   ]
 }
