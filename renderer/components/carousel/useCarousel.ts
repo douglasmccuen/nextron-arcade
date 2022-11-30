@@ -85,11 +85,12 @@ const useCarousel = (
             return true
           })
           .catch(console.error)
-
-
       }
     },
-    onMouseDown: () => false,
+    onMouseDown: ({button}: MouseEvent) => {
+      if (button == 0) onOpen(state.active)
+      else if (button == 2) onOpen(state.active)
+    },
     tabIndex: 0
   }
 
