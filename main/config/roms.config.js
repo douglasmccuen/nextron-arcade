@@ -291,7 +291,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/splatterhouse.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/10630-ingame-Splatter-House.jpg',
       rating: 5,
-      description: 'You must be this tall to play this game... Jamin, ask your dad if it is ok.'
+      description: 'You must be this tall to play this game... Jamin, go ask your dad if it is ok.'
     },
     {
       game: 'spyhunt',
@@ -348,7 +348,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/supermarioworlpreview.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/supermarioworld.png',
       rating: 5,
-      description: 'I guess this is cooler that Bros, but I never made it here.  Maybe someday...'
+      description: 'I guess this is cooler that Super Mario Bros, but I never made it here.  Maybe someday...'
     },
     {
       game: 'superpunchout.smc',
@@ -367,7 +367,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/tmnt.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/10754-ingame-Teenage-Mutant-Ninja-Turtles.jpg',
       rating: 5,
-      description: 'The words Teenage and Mutant suck so coolness out of the word Ninja, that it doesn\'t matter what follows.'
+      description: 'The words Teenage and Mutant suck so much coolness out of the word Ninja, that it doesn\'t matter what follows.'
     },
     {
       game: 'atetris',
