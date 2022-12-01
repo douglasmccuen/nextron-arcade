@@ -1,7 +1,7 @@
 {
   "name": "mccuen-arcade-2",
   "productName": "McCuen Arcade 2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Arcade controller for TeamMcCuen",
   "repository": {
     "type": "git",
