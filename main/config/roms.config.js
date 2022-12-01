@@ -255,7 +255,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/princeofpersia.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/princeofpersia.png',
       rating: 5,
-      description: 'This was my Freshman year in college.  I\'d come back from class and find people in my room playing it my computer.  Honest.  I went to class.'
+      description: 'This was my Freshman year in college.  I\'d come back from class and find people in my room playing it on my computer.  Honest.  I went to class.'
     },
     {
       game: 'rampage',
@@ -328,7 +328,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/supermariobrospreview.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/supermariobros.jpg',
       rating: 5,
-      description: ''
+      description: 'A classic, and still fun to play.  I wish I knew all the cheats.'
     },
     {
       game: 'supermariokart.smc',
@@ -338,7 +338,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/supermariokartpreview.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/supermariokart.jpg',
       rating: 5,
-      description: ''
+      description: 'The Wii really raised the bar for this game, but the original is still pretty fun.'
     },
     {
       game: 'supermarioworld.zip',
@@ -348,7 +348,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/supermarioworlpreview.png',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/v1/supermarioworld.png',
       rating: 5,
-      description: ''
+      description: 'I guess this is cooler that Bros, but I never made it here.  Maybe someday...'
     },
     {
       game: 'superpunchout.smc',
@@ -367,7 +367,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/tmnt.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/10754-ingame-Teenage-Mutant-Ninja-Turtles.jpg',
       rating: 5,
-      description: ''
+      description: 'The words Teenage and Mutant suck so coolness out of the word Ninja, that it doesn\'t matter what follows.'
     },
     {
       game: 'atetris',
@@ -385,7 +385,7 @@ const roms = {
       preview: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/better/simpsons.jpg',
       image: 'https://team-mccuen.s3-us-west-2.amazonaws.com/images/10529-ingame-Simpsons-The.jpg',
       rating: 5,
-      description: ''
+      description: 'Eventually, you battle the bosses: Will Wright and Matt Groening.  I\'ve always wanted to hit Will with a vaccuum.'
     },
     {
       game: 'trackfld',
